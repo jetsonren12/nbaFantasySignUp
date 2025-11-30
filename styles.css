@@ -1,0 +1,36 @@
+:root {
+    --container-width: 100vw;
+    --container-height: 100vh;
+    --img-width: calc((var(--container-width) - 60vw));
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0, 0.75);
+}
+
+.container {
+    width: var(--container-width);
+    height: var(--container-height);
+    display: flex;
+}
+
+img {
+    width: var(--img-width);  
+    height: var(--container-height); 
+}
+
+p {
+    color: rgb(255, 255, 255);
+}
+
+.signup-container {
+    background-color: rgb(255, 255, 255,0.75);
+    width: 50vw;
+    height: 50vh;
+    border-radius: 10px;
+    align-self: center;
+    margin: 0 auto;
+}
