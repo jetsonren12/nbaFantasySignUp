@@ -8,29 +8,51 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(0, 0, 0, 0.75);
+    background-color: rgb(99, 142, 241,0.5); 
 }
 
 .container {
     width: var(--container-width);
     height: var(--container-height);
     display: flex;
+    padding-left: 1em;
 }
 
 img {
     width: var(--img-width);  
-    height: var(--container-height); 
-}
-
-p {
-    color: rgb(255, 255, 255);
+    height: calc(var(--container-height) - 10vh); 
+    align-self: center;
+    border-radius: 15px;
 }
 
 .signup-container {
-    background-color: rgb(255, 255, 255,0.75);
     width: 50vw;
     height: 50vh;
     border-radius: 10px;
     align-self: center;
     margin: 0 auto;
+    padding: 30px;
+
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.25rem;
+    gap: 1em;
+}
+
+form > * {
+    flex-basis: 10vw;
+}
+
+button {
+    align-self: center;
+    min-width: 30vw;
+
+}
+
+legend {
+    font-size: 2rem;
+    padding-bottom: 35px;
 }
