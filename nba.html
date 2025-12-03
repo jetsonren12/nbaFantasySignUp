@@ -29,14 +29,19 @@
                 <input type="password" 
                     id="password" 
                     name="password" 
-                    pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,}$" 
+                    pattern=".{5,}" 
                     placeholder="foobar6"
-                    title="Password must be at least 5 characters long and contain at least 1 number."
+                    minlength="5"
+                    title="Password must be at least 5 characters long."
                     >
 
                 <label for="confirm_pw">Confirm Password:</label>
-                <input type="password" id="confirm_pw" name="confirm_pw" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,}$" placeholder="foobar6">
-
+                <input type="password" 
+                    id="confirm_pw" 
+                    name="confirm_pw" 
+                    pattern=".{5,}" 
+                    placeholder="foobar6">
+                    
                 <button type="submit">Create Account</button>
             </form>
 
